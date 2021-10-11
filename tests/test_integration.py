@@ -12,6 +12,6 @@ class TournamentIntegrationTestCase(TestCase):
         os.remove('output.txt')
 
     def test_integration_position(self):
-        subprocess.run(['python', '.\main.py', 'tests/testfiles/test_integration.txt'])
+        subprocess.run(['python', 'main.py', 'tests/testfiles/test_integration.txt'])
         with open('output.txt', 'r') as f:
             self.assertNotEqual("", next(f))
