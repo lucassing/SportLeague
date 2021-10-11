@@ -72,7 +72,7 @@ class Tournament:
         return table
 
     def __str__(self):
-        st = ''
+        st = 'Tournament stats:\n'
         for stat in self._calculate_position():
             st += f"{stat['position']} {stat['team'].team_name} {stat['point']} \n"
-        return st
+        return st[:-1]

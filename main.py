@@ -35,4 +35,5 @@ if __name__ == '__main__':
 
     tf = TournamentFactory(teams_data, games_data)
 
+    print(tf.tournament_instance)
     tournament_file_manager.export(str(tf.tournament_instance))

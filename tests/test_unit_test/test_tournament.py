@@ -46,4 +46,4 @@ class TestTournament(TestCase):
         self.assertEqual(self.tournament.stats()[1], (self.teams[1], 1))
 
     def test_str(self):
-        self.assertEqual(str(self.tournament), "1 Boca Juniors 0 \n1 River Plate 0 \n")
+        self.assertEqual(str(self.tournament), 'Tournament stats:\n1 Boca Juniors 0 \n1 River Plate 0 ')
